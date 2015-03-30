@@ -8,6 +8,7 @@
 
 #import "EventTableViewController.h"
 #import "Event.h"
+#import "EventDetailViewController.h"
 
 @interface EventTableViewController ()
 @property (strong, nonatomic) NSMutableArray * events;
@@ -59,15 +60,22 @@
     return cell;
 }
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    
+    if ([segue.identifier isEqualToString:@"eventDetailSegue"]) {
+        EventDetailViewController * ed = segue.destinationViewController;
+        NSIndexPath * indexPath = [self.tableView indexPathForSelectedRow];
+        Event * eventToBeDisplayed = self.events[indexPath.row];
+        ed.event = eventToBeDisplayed;
+        [ed refresh];
+    }
 }
-*/
 
 -(void)refresh {
     //query database
