@@ -18,6 +18,8 @@
 		1A2CB7001AC8F78300BEAC01 /* 852-map@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A2CB6FC1AC8F78300BEAC01 /* 852-map@2x.png */; };
 		1A2CB7011AC8F78300BEAC01 /* 854-list.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A2CB6FD1AC8F78300BEAC01 /* 854-list.png */; };
 		1A2CB7021AC8F78300BEAC01 /* 854-list@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A2CB6FE1AC8F78300BEAC01 /* 854-list@2x.png */; };
+		1A2CB7061AC8FBC600BEAC01 /* EventTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A2CB7051AC8FBC600BEAC01 /* EventTableViewController.m */; };
+		1A2CB70A1AC8FD0800BEAC01 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A2CB7091AC8FD0800BEAC01 /* Event.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,10 @@
 		1A2CB6FC1AC8F78300BEAC01 /* 852-map@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "852-map@2x.png"; sourceTree = "<group>"; };
 		1A2CB6FD1AC8F78300BEAC01 /* 854-list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "854-list.png"; sourceTree = "<group>"; };
 		1A2CB6FE1AC8F78300BEAC01 /* 854-list@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "854-list@2x.png"; sourceTree = "<group>"; };
+		1A2CB7041AC8FBC600BEAC01 /* EventTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventTableViewController.h; sourceTree = "<group>"; };
+		1A2CB7051AC8FBC600BEAC01 /* EventTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventTableViewController.m; sourceTree = "<group>"; };
+		1A2CB7081AC8FD0800BEAC01 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		1A2CB7091AC8FD0800BEAC01 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +95,8 @@
 		1A2CB6D31AC8EE7D00BEAC01 /* TabbedApp */ = {
 			isa = PBXGroup;
 			children = (
+				1A2CB7071AC8FCD300BEAC01 /* Models */,
+				1A2CB7031AC8FB2300BEAC01 /* View Controllers */,
 				1A2CB6FA1AC8F78300BEAC01 /* Images */,
 				1A2CB6D81AC8EE7D00BEAC01 /* AppDelegate.h */,
 				1A2CB6D91AC8EE7D00BEAC01 /* AppDelegate.m */,
@@ -137,6 +145,24 @@
 				1A2CB6FE1AC8F78300BEAC01 /* 854-list@2x.png */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		1A2CB7031AC8FB2300BEAC01 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1A2CB7041AC8FBC600BEAC01 /* EventTableViewController.h */,
+				1A2CB7051AC8FBC600BEAC01 /* EventTableViewController.m */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		1A2CB7071AC8FCD300BEAC01 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1A2CB7081AC8FD0800BEAC01 /* Event.h */,
+				1A2CB7091AC8FD0800BEAC01 /* Event.m */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,6 +271,8 @@
 			files = (
 				1A2CB6DD1AC8EE7D00BEAC01 /* ViewController.m in Sources */,
 				1A2CB6DA1AC8EE7D00BEAC01 /* AppDelegate.m in Sources */,
+				1A2CB70A1AC8FD0800BEAC01 /* Event.m in Sources */,
+				1A2CB7061AC8FBC600BEAC01 /* EventTableViewController.m in Sources */,
 				1A2CB6D71AC8EE7D00BEAC01 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

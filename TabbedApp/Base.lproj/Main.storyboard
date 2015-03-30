@@ -61,16 +61,16 @@
             </objects>
             <point key="canvasLocation" x="1194" y="1032"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Event Table View Controller-->
         <scene sceneID="6HS-QG-J7x">
             <objects>
-                <tableViewController id="TOc-PB-wHN" sceneMemberID="viewController">
+                <tableViewController id="TOc-PB-wHN" customClass="EventTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="MyX-Ew-3eZ">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Event Cell" textLabel="Dwe-Uk-qBG" style="IBUITableViewCellStyleDefault" id="oeL-vo-jMZ">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EventCell" textLabel="Dwe-Uk-qBG" style="IBUITableViewCellStyleDefault" id="oeL-vo-jMZ">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oeL-vo-jMZ" id="ECU-VR-tga">
                                     <autoresizingMask key="autoresizingMask"/>
