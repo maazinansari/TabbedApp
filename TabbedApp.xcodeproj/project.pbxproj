@@ -14,6 +14,10 @@
 		1A2CB6E21AC8EE7E00BEAC01 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A2CB6E11AC8EE7E00BEAC01 /* Images.xcassets */; };
 		1A2CB6E51AC8EE7E00BEAC01 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A2CB6E31AC8EE7E00BEAC01 /* LaunchScreen.xib */; };
 		1A2CB6F11AC8EE7E00BEAC01 /* TabbedAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A2CB6F01AC8EE7E00BEAC01 /* TabbedAppTests.m */; };
+		1A2CB6FF1AC8F78300BEAC01 /* 852-map.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A2CB6FB1AC8F78300BEAC01 /* 852-map.png */; };
+		1A2CB7001AC8F78300BEAC01 /* 852-map@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A2CB6FC1AC8F78300BEAC01 /* 852-map@2x.png */; };
+		1A2CB7011AC8F78300BEAC01 /* 854-list.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A2CB6FD1AC8F78300BEAC01 /* 854-list.png */; };
+		1A2CB7021AC8F78300BEAC01 /* 854-list@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A2CB6FE1AC8F78300BEAC01 /* 854-list@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,10 @@
 		1A2CB6EA1AC8EE7E00BEAC01 /* TabbedAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TabbedAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A2CB6EF1AC8EE7E00BEAC01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A2CB6F01AC8EE7E00BEAC01 /* TabbedAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabbedAppTests.m; sourceTree = "<group>"; };
+		1A2CB6FB1AC8F78300BEAC01 /* 852-map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "852-map.png"; sourceTree = "<group>"; };
+		1A2CB6FC1AC8F78300BEAC01 /* 852-map@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "852-map@2x.png"; sourceTree = "<group>"; };
+		1A2CB6FD1AC8F78300BEAC01 /* 854-list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "854-list.png"; sourceTree = "<group>"; };
+		1A2CB6FE1AC8F78300BEAC01 /* 854-list@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "854-list@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +89,7 @@
 		1A2CB6D31AC8EE7D00BEAC01 /* TabbedApp */ = {
 			isa = PBXGroup;
 			children = (
+				1A2CB6FA1AC8F78300BEAC01 /* Images */,
 				1A2CB6D81AC8EE7D00BEAC01 /* AppDelegate.h */,
 				1A2CB6D91AC8EE7D00BEAC01 /* AppDelegate.m */,
 				1A2CB6DB1AC8EE7D00BEAC01 /* ViewController.h */,
@@ -117,6 +126,17 @@
 				1A2CB6EF1AC8EE7E00BEAC01 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1A2CB6FA1AC8F78300BEAC01 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				1A2CB6FB1AC8F78300BEAC01 /* 852-map.png */,
+				1A2CB6FC1AC8F78300BEAC01 /* 852-map@2x.png */,
+				1A2CB6FD1AC8F78300BEAC01 /* 854-list.png */,
+				1A2CB6FE1AC8F78300BEAC01 /* 854-list@2x.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,9 +219,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A2CB6FF1AC8F78300BEAC01 /* 852-map.png in Resources */,
+				1A2CB7021AC8F78300BEAC01 /* 854-list@2x.png in Resources */,
+				1A2CB7011AC8F78300BEAC01 /* 854-list.png in Resources */,
 				1A2CB6E01AC8EE7E00BEAC01 /* Main.storyboard in Resources */,
 				1A2CB6E51AC8EE7E00BEAC01 /* LaunchScreen.xib in Resources */,
 				1A2CB6E21AC8EE7E00BEAC01 /* Images.xcassets in Resources */,
+				1A2CB7001AC8F78300BEAC01 /* 852-map@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +438,7 @@
 				1A2CB6F61AC8EE7E00BEAC01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1A2CB6F71AC8EE7E00BEAC01 /* Build configuration list for PBXNativeTarget "TabbedAppTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +447,7 @@
 				1A2CB6F91AC8EE7E00BEAC01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
