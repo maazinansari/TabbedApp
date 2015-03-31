@@ -7,7 +7,7 @@
         <!--Map-->
         <scene sceneID="STv-Ts-f9n">
             <objects>
-                <viewController id="Mwt-Rg-glT" sceneMemberID="viewController">
+                <viewController id="Mwt-Rg-glT" customClass="MapViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hV1-Or-Msw"/>
                         <viewControllerLayoutGuide type="bottom" id="39k-YO-bAQ"/>
