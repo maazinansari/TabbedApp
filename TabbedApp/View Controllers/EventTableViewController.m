@@ -80,18 +80,18 @@
 -(void)refresh {
     //query database
     Event * e1 = [[Event alloc] init];
-    e1.title = @"Luchtime1";
-    e1.location = @"Union1";
+    e1.title = @"Free Food!";
+    e1.location = @"Illini Union Courtyard Cafe";
     e1.date = [NSDate date];
     
     Event * e2 = [[Event alloc] init];
-    e2.title = @"Luchtime2";
-    e2.location = @"Union2";
+    e2.title = @"Basketball - Illinois vs. Michigan";
+    e2.location = @"State Farm Stadium";
     e2.date = [NSDate date];
     
     Event * e3 = [[Event alloc] init];
-    e3.title = @"Luchtime3";
-    e3.location = @"Union3";
+    e3.title = @"Symphony Orchestra";
+    e3.location = @"Krannert Center for the Performing Arts";
     e3.date = [NSDate date];
     
     NSArray * temp = @[e1, e2, e3];
