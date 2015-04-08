@@ -7,8 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Event.h"
+#import "EventDetailViewController.h"
+#import "MapViewController.h"
 
 @interface EventTableViewController : UITableViewController
+
+@property (nonatomic) NSMutableArray * currentArray;
+@property (nonatomic) Event * currentEvent;
 
 -(void) refresh;
 

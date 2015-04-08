@@ -7,8 +7,7 @@
 //
 
 #import "EventTableViewController.h"
-#import "Event.h"
-#import "EventDetailViewController.h"
+
 
 @interface EventTableViewController ()
 @property (strong, nonatomic) NSMutableArray * events;
@@ -54,7 +53,7 @@
     
     // Configure the cell...
     Event * e = self.events[indexPath.row];
-    cell.textLabel.text = e.title;
+    cell.textLabel.text = e.title; //names each item in the table
     
     
     return cell;
@@ -66,8 +65,20 @@
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
+    
+    if (([segue.identifier isEqualToString:@"mapPinSegue"])) {
+        MapViewController * mvc = [segue destinationViewController];
+        NSIndexPath * indexPath1 = [self.tableView indexPathForSelectedRow];
+        Event * eventToBeDisplayed = self.events[indexPath1.row];
+        //[mvc setCurrentEvent:eventToBeDisplayed];
+        mvc.currentEvent = eventToBeDisplayed;
+        mvc.currentArray = self.events;
+        [mvc refresh];
+    }
+    
     // Pass the selected object to the new view controller.
     
+    /*
     if ([segue.identifier isEqualToString:@"eventDetailSegue"]) {
         EventDetailViewController * ed = segue.destinationViewController;
         NSIndexPath * indexPath = [self.tableView indexPathForSelectedRow];
@@ -75,6 +86,7 @@
         ed.event = eventToBeDisplayed;
         [ed refresh];
     }
+     */
 }
 
 -(void)refresh {
@@ -83,18 +95,25 @@
     e1.title = @"Free Food!";
     e1.location = @"Illini Union Courtyard Cafe";
     e1.date = [NSDate date];
+    e1.lat = (40.1095);
+    e1.lon = (-88.227);
+    
     
     Event * e2 = [[Event alloc] init];
     e2.title = @"Basketball - Illinois vs. Michigan";
     e2.location = @"State Farm Stadium";
     e2.date = [NSDate date];
+    e2.lon = 40.1;
+    e2.lat = -88.3;
     
     Event * e3 = [[Event alloc] init];
     e3.title = @"Symphony Orchestra";
     e3.location = @"Krannert Center for the Performing Arts";
     e3.date = [NSDate date];
+    e3.lat = 40.09;
+    e3.lon = -88.33;
     
-    NSArray * temp = @[e1, e2, e3];
+    NSArray * temp = @[e1, e2, e3]; //make global array
     
     self.events = [NSMutableArray arrayWithArray:temp];
 }

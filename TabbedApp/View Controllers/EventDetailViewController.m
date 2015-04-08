@@ -11,9 +11,9 @@
 
 @interface EventDetailViewController ()
 
-@property (weak, nonatomic) IBOutlet UILabel *eventTitle;
-@property (weak, nonatomic) IBOutlet UILabel *location;
-@property (weak, nonatomic) IBOutlet UILabel *date;
+@property (weak, nonatomic) IBOutlet UILabel * eventTitle;
+@property (weak, nonatomic) IBOutlet UILabel * location;
+@property (weak, nonatomic) IBOutlet UILabel * date;
 @property (strong, nonatomic) NSDateFormatter * dateFormatter;
 
 @end
@@ -24,7 +24,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    //format the date (NSDate)
+    /*
+     TODO:
+    format the date (NSDate)
+     */
     self.dateFormatter = [[NSDateFormatter alloc] init];
     self.dateFormatter.dateStyle = NSDateFormatterShortStyle;
     self.dateFormatter.timeStyle = NSDateFormatterShortStyle;

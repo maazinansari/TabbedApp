@@ -7,7 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Event.h"
+#import "EventDetailViewController.h"
+
 
 @interface MapViewController : UIViewController
+
+@property (strong, nonatomic) NSMutableArray * currentArray;
+@property (weak, nonatomic) Event * currentEvent;
+
+-(void) refresh;
+
 
 @end

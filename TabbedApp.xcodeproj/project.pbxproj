@@ -105,11 +105,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A2CB7261ACA4BDB00BEAC01 /* Foundation.framework in Frameworks */,
 				1A2CB7311ACA4C1800BEAC01 /* OpenGLES.framework in Frameworks */,
 				1A2CB7321ACA4C1800BEAC01 /* QuartzCore.framework in Frameworks */,
 				1A2CB7331ACA4C1800BEAC01 /* SystemConfiguration.framework in Frameworks */,
 				1A2CB7341ACA4C1800BEAC01 /* UIKit.framework in Frameworks */,
-				1A2CB7261ACA4BDB00BEAC01 /* Foundation.framework in Frameworks */,
 				1A2CB7271ACA4BDB00BEAC01 /* GLKit.framework in Frameworks */,
 				1A2CB7281ACA4BDB00BEAC01 /* ImageIO.framework in Frameworks */,
 				1A2CB7291ACA4BDB00BEAC01 /* libc++.dylib in Frameworks */,

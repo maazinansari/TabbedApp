@@ -13,5 +13,9 @@
 @property (strong, nonatomic) NSString * title;
 @property (strong, nonatomic) NSString * location;
 @property (strong, nonatomic) NSDate * date;
+@property (nonatomic) double lat;
+@property (nonatomic) double lon;
+
+
 
 @end

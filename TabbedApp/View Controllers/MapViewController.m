@@ -7,10 +7,12 @@
 //
 
 #import "MapViewController.h"
+#import "EventDetailViewController.h"
+#import "Event.h"
 #import <GoogleMaps/GoogleMaps.h>
 
 @implementation MapViewController {
-    GMSMapView *mapView_;
+    GMSMapView * mapView_;
 }
 
 - (void)viewDidLoad {
@@ -20,15 +22,15 @@
                                                             longitude:-88.2284
                                                                  zoom:14];
     mapView_ = [GMSMapView mapWithFrame:CGRectZero camera:camera];
-    mapView_.myLocationEnabled = YES;
+    mapView_.myLocationEnabled = NO;
     self.view = mapView_;
     
     // Creates a marker in the center of the map.
-    GMSMarker *marker = [[GMSMarker alloc] init];
-    marker.position = CLLocationCoordinate2DMake(40.1095, -88.2275);
-    marker.title = @"Illini Union";
-    marker.snippet = @"1 event";
-    marker.map = mapView_;
+    GMSMarker * testMarker = [[GMSMarker alloc] init];
+    testMarker.position = CLLocationCoordinate2DMake(40.1095, -88.227);
+    testMarker.title = @"Illini Union"; //from array, not database
+    testMarker.snippet = @"1 event";
+    testMarker.map = mapView_;
 }
 
 /*
@@ -40,5 +42,22 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+-(void) refresh {
+    Event * eventToUse = self.currentEvent;
+    
+    GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:eventToUse.lat
+                                                            longitude:eventToUse.lon
+                                                                 zoom:16];
+    mapView_ = [GMSMapView mapWithFrame:CGRectZero camera:camera];
+    mapView_.myLocationEnabled = NO;
+    self.view = mapView_;
+    
+    GMSMarker * testMarker = [[GMSMarker alloc] init];
+    testMarker.position = CLLocationCoordinate2DMake(eventToUse.lat, eventToUse.lon);//40.1095, -88.227);
+    testMarker.title = eventToUse.title; //from array, not database
+    testMarker.snippet = @"1 event";
+    testMarker.map = mapView_;
+}
 
 @end
